@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Shawn&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Shawn's Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Shawn's Blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Shawn's Blog">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Shawn&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -33,7 +33,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">Shawn&#39;s Blog</a>
       </h1>
       
     </div>
@@ -61,6 +61,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Express-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/21/Express-1/" class="article-date">
+  <time datetime="2016-07-21T02:02:06.000Z" itemprop="datePublished">2016-07-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/21/Express-1/">Express(1)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>路由的定义由如下结构组成：app.METHOD(PATH, HANDLER)。其中，app 是一个<br>express 实例；METHOD 是某个 HTTP 请求方式中的一个；PATH 是服务器端的路<br>径；HANDLER 是当路由匹配到时需要执行的函数。</p>
+<p>app.all() 是一个特殊的路由方法，没有任何 HTTP 方法与其对应，它的作用是对于一个路径上的所有请求加载中间件。</p>
+<p>使用字符串模式的路由路径示例:<br>// 匹配 /abe 和 /abcde<br>app.get(‘/ab(cd)?e’, function(req, res) {<br> res.send(‘ab(cd)?e’);<br> });</p>
+<p>使用正则表达式的路由路径示例：<br>// 匹配 butterfly、dragonfly，不匹配 butterflyman、dragonfly man等<br>app.get(/.<em>fly$/, function(req, res) {<br>   res.send(‘/.</em>fly$/‘);<br>});</p>
+<p>问题：<br>next(), next(‘route’)区别<br>app.use使用详解</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/21/Express-1/" data-id="ciqvp9pgu00002n9c361p23kf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/express/">express</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-My-New-Post3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/07/20/My-New-Post3/" class="article-date">
@@ -87,43 +130,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/20/My-New-Post3/" data-id="ciquot94m0004dq9cdk2px2c8" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-My-New-Post2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/07/20/My-New-Post2/" class="article-date">
-  <time datetime="2016-07-20T09:28:03.000Z" itemprop="datePublished">2016-07-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/20/My-New-Post2/">My New Post2</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/20/My-New-Post2/" data-id="ciquot94k0003dq9cg5k3k5vl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/20/My-New-Post3/" data-id="ciqvp9ph800042n9crsp9sn3z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -155,13 +162,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>post1 post1</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/20/My-New-Post1/" data-id="ciquot94e0001dq9c8atp6dzl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/20/My-New-Post1/" data-id="ciqvp9ph500032n9cd8nwp8bh" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wang1/">wang1</a></li></ul>
+
     </footer>
   </div>
   
@@ -195,10 +205,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/20/My-New-Post/" data-id="ciquot9490000dq9cg63ul314" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/20/My-New-Post/" data-id="ciqvp9pgz00012n9ckwznrzss" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/new-wang/">new wang</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/new/">new</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wang/">wang</a></li></ul>
 
     </footer>
   </div>
@@ -242,7 +252,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/20/hello-world/" data-id="ciquot94n0005dq9cbf76i9x2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/20/hello-world/" data-id="ciqvp9phb00062n9cbdcm00qf" class="article-share-link">Share</a>
       
       
     </footer>
@@ -264,7 +274,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/new-wang/">new wang</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/new/">new</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wang/">wang</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wang1/">wang1</a></li></ul>
     </div>
   </div>
 
@@ -274,7 +284,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/new-wang/" style="font-size: 10px;">new wang</a>
+      <a href="/tags/express/" style="font-size: 10px;">express</a> <a href="/tags/new/" style="font-size: 10px;">new</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/wang/" style="font-size: 10px;">wang</a> <a href="/tags/wang1/" style="font-size: 10px;">wang1</a>
     </div>
   </div>
 
@@ -296,11 +306,11 @@
       <ul>
         
           <li>
-            <a href="/2016/07/20/My-New-Post3/">My New Post3</a>
+            <a href="/2016/07/21/Express-1/">Express(1)</a>
           </li>
         
           <li>
-            <a href="/2016/07/20/My-New-Post2/">My New Post2</a>
+            <a href="/2016/07/20/My-New-Post3/">My New Post3</a>
           </li>
         
           <li>
@@ -327,7 +337,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2016 John Doe<br>
+      &copy; 2016 Shawn Wang<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
